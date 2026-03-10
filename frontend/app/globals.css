@@ -1,0 +1,19 @@
+* { box-sizing: border-box; }
+body { margin: 0; font-family: system-ui, sans-serif; background: #0f0f12; color: #e4e4e7; min-height: 100vh; }
+a { color: #a78bfa; text-decoration: none; }
+a:hover { text-decoration: underline; }
+input, button, textarea { font: inherit; }
+
+.guest-layout {
+  flex: 1;
+  display: grid;
+  grid-template-columns: 1fr 320px;
+  gap: 0;
+  max-width: 1200px;
+  margin: 0 auto;
+  width: 100%;
+}
+@media (max-width: 768px) {
+  .guest-layout { grid-template-columns: 1fr; }
+  .guest-layout aside { border-top: 1px solid #27272a; max-height: 240px; }
+}
